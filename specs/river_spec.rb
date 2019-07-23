@@ -8,12 +8,12 @@ class RiverTest < MiniTest::Test
   def setup()
     @river = River.new("Amazon")
 
-    # @fish1 = Fish.new("Bill")
-    # @fish2 = Fish.new("Ted")
-    # @fish3 = Fish.new("Nemo")
-    # @fish4 = Fish.new("Dory")
-    #
-    # @fish = [@fish1, @fish2, @fish3, @fish4]
+    @fish1 = Fish.new("Bill")
+    @fish2 = Fish.new("Ted")
+    @fish3 = Fish.new("Nemo")
+    @fish4 = Fish.new("Dory")
+
+    @fish = [@fish1, @fish2, @fish3, @fish4]
 
   end
 
