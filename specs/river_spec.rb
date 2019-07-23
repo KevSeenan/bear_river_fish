@@ -21,8 +21,8 @@ class RiverTest < MiniTest::Test
     assert_equal("Amazon", @river.river_name)
   end
 
-  def test_get_fish_count()
-    assert_equal(0, @river.fish_count)
+  def test_get_fish_population()
+    assert_equal(0, @river.fish_population)
   end
 
   def test_get_fish_population()
@@ -32,7 +32,7 @@ class RiverTest < MiniTest::Test
     @river.add_fish(@fish3)
     @river.add_fish(@fish4)
 
-    assert_equal(4, @river.fish_count)
+    assert_equal(4, @river.fish_population)
   end
 
 end
