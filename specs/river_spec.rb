@@ -2,6 +2,7 @@ require('minitest/autorun')
 require('minitest/rg')
 require_relative('../river.rb')
 require_relative('../fish.rb')
+require_relative('../bear.rb')
 
 class RiverTest < MiniTest::Test
 
@@ -37,6 +38,16 @@ class RiverTest < MiniTest::Test
 
   def test_get_fish_count()
    assert_equal(0, @river.fish_count)
+  end
+
+  # def test_river_looses_a_fish_after_bear_eats_one()
+  #
+  #   @stop1 = BusStop.new("Elm Row")
+  #   @stop1.add_to_queue(@passenger1)
+  #   @bear.take_fish(@fish1)
+  #   assert_equal(1, @bus.passenger_count())
+  #   assert_equal(0, @stop1.queue_length())
+
   end
 
 end
