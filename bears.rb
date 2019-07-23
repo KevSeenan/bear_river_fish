@@ -12,4 +12,8 @@ class Bear
     return @bear_stomach.size()
   end
 
+  def bear_food_count()
+    return @bear_stomach.count()
+  end
+
 end
