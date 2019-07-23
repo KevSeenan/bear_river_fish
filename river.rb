@@ -15,5 +15,9 @@ class River
     @fish_population << fish
   end
 
+  def fish_count()
+    return @fish_population.size()
+  end
+
 
 end
